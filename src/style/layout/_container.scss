@@ -1,0 +1,19 @@
+@use '../base/variables' as *;
+
+.container{
+    width: 100%;
+    max-width: $bp-mobile;
+    margin: 0 auto;
+    padding: 0 1rem ;
+   
+}
+
+.wrapper-container .container{
+    width: 100%;
+    max-width: $bp-mobile;
+    margin: 0 auto;
+    padding: 0 1rem ;
+    position: relative;
+    z-index: 3;
+   
+}

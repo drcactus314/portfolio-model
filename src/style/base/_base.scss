@@ -1,0 +1,24 @@
+@use 'variables' as *;
+
+
+.hidden {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+.text {
+    font-size: 18px;
+    font-family: InterTight;
+}
+button{
+  padding: 0;
+  border: transparent;
+}
+a{
+  text-decoration: none;
+  color: var(--primary-dark-color);
+}
+
+

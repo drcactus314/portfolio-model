@@ -1,0 +1,19 @@
+:root{
+    --primary-dark-color: rgba(28, 29, 32, 1);
+    --secondary-dark-color: rgba(36, 37, 39, 1);
+    --primary-gray-color: rgba(59, 59, 59, 1);
+    --primary-red-color: rgba(237, 59, 68, 1);
+    --primary-white-color: rgba(250, 250, 250, 1);
+
+    // linear-gradients
+
+    --red-gradient: #ED3B44;
+    --dark-red-gradient:#5f2428;
+    --dark-gradient:#19191b;
+}
+
+// breakpoints
+
+$bp-mobile: 375px;
+$bp-tablet: 768px;
+$bp-desktop: 1440px;
