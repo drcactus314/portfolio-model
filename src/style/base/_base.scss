@@ -24,4 +24,8 @@ a{
   color: var(--primary-dark-color);
 }
 
+hr{
+  border: 1px solid color-mix(in srgb, var(--primary-white-color), transparent 80%);
+}
+
 
