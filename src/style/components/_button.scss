@@ -1,0 +1,10 @@
+@use '../base/mixins' as m;
+
+.button{
+    padding: 8px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid color-mix(in srgb, var(--primary-white-color), transparent 80%);
+    background-color: transparent;
+}

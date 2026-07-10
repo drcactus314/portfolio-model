@@ -1,0 +1,22 @@
+@use 'variables' as *;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin text-title{
+  font-family: "InterTight";
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 5%;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--primary-white-color), transparent 60%);
+}

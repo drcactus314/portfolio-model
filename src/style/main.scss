@@ -3,6 +3,8 @@
 
 @use 'base/base';
 @use 'base/reset';
+@use 'base/mixins';
+
 
 
 @use 'layout/container';
@@ -10,5 +12,10 @@
 @use 'layout/wrapper-container';
 
 @use 'components/icon';
+@use 'components/cards';
+@use 'components/button';
+@use 'components/section-title';
+
 
 @use 'sections/hero';
+@use 'sections/about'

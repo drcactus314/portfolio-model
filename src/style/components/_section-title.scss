@@ -1,0 +1,6 @@
+@use '../base/mixins' as m;
+
+.section-title{
+    @include m.flex-between;
+    @include m.text-title;
+}
