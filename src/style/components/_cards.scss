@@ -2,4 +2,9 @@
     border-radius: 24px;
     background-color: var(--secondary-dark-color);
     font-family: "InterTight";
+
+    &__content{
+        padding: 1.5rem;
+    }
+    
 }

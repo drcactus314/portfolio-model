@@ -5,7 +5,7 @@
 @use 'base/reset';
 @use 'base/mixins';
 
-
+@use 'utils/utils';
 
 @use 'layout/container';
 @use 'layout/header';
@@ -15,6 +15,7 @@
 @use 'components/cards';
 @use 'components/button';
 @use 'components/section-title';
+@use 'components/project-card';
 
 
 @use 'sections/hero';
@@ -22,3 +23,5 @@
 @use 'sections/role';
 @use 'sections/education';
 @use 'sections/benefits';
+@use 'sections/projects';
+@use 'sections/faq';

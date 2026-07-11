@@ -1,0 +1,42 @@
+.project-card {
+  &__info {
+    margin-top: 2rem;
+    padding: 2rem 2rem 0rem 2rem;
+    background-color: var(--primary-white-color);
+    border-radius: 1.5rem 1.5rem 0 0;
+    &__tags-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      &__item {
+        font-family: "InterTight";
+        font-size: 1rem;
+        padding: 0.75rem 1.25rem;
+        border: 1px solid
+          color-mix(in srgb, var(--primary-dark-color), transparent 80%);
+        border-radius: 3.5rem;
+      }
+    }
+    &__title {
+      margin-top: 6rem;
+      font-family: "InterTight";
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+    &__button {
+      margin: 2rem 0;
+      background-color: var(--primary-red-color);
+      padding: 0.8rem 2rem;
+    }
+  }
+  &__image {
+    padding: 6rem 1rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+    background-color: var(--secondary-dark-color);
+    &__item {
+      width: 321px;
+      height: 195px;
+      object-fit: contain;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.projects-section{
+    margin-top: 4rem;
+    &__controls{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 0.75rem;
+      }
+}
+

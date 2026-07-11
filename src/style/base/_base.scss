@@ -28,4 +28,8 @@ hr{
   border: 1px solid color-mix(in srgb, var(--primary-white-color), transparent 80%);
 }
 
+svg{
+  stroke: var(--primary-gray-color);
+}
+
 
