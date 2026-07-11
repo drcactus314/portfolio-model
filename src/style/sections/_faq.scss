@@ -1,3 +1,30 @@
+@use '../base/mixins' as m;
+
 .faq-section{
     margin-top: 4rem;
+
+    &__list hr{
+        margin-top: 1.25rem;
+    }
+
+    &__list hr:first-child{
+        margin-top: 2rem;
+    }
+    &__header{
+        @include m.flex-between;
+        margin-top: 1.25rem;
+    }
+    &__title{
+        max-width: 80%;
+        font-family: "InterTight";
+        font-size: 1.25rem;
+        color: var(--primary-white-color);
+        line-height: 1.5;
+    }
+    &__description{
+        margin-top: 1rem;
+        font-family: "InterTight";
+        line-height: 1.5;
+        color: color-mix(in srgb, var(--primary-white-color), transparent 60%);
+    }
 }
