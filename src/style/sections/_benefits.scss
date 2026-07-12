@@ -6,26 +6,7 @@
         display: grid;
         gap: 1rem;
     }
-    &__icon-container{
-        height: 48px;
-        width: 48px;
-        padding: 12px;
-        border-radius: 10px;
-        background-color: var(--primary-red-color);
-    }
-    &__card-title{
-        margin-top: 4rem;
-        font-size: 1.125rem;
-        color: var(--primary-white-color);
-        line-height: 1.5;
-    }
-    &__card-description{
-        margin-top: 0.5rem;
-        font-size: 1rem;
-        color: color-mix(in srgb, var(--primary-white-color), transparent 60%);
-        line-height: 1.5;
-    }
-    &__card-button{
+    &__button{
         margin-top: 2rem;
     }
 }

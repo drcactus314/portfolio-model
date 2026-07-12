@@ -175,9 +175,9 @@
                 <h2>Benefits working with me</h2>
               </div>
               <ul class="benefits-section__list">
-                <li class="benefits-section__list_item cards">
+                <li class="benefits-section__list__item cards">
                   <article class="cards__content">
-                    <div class="benefits-section__icon-container">
+                    <div class="cards__icon-container">
                       <svg
                         width="24"
                         height="24"
@@ -188,8 +188,8 @@
                         />
                       </svg>
                     </div>
-                    <h3 class="benefits-section__card-title">Expertise</h3>
-                    <p class="benefits-section__card-description">
+                    <h3 class="cards__title">Expertise</h3>
+                    <p class="cards__description">
                       As a highly experienced developer, I have deep knowledge
                       of programming and website development.
                     </p>
@@ -197,15 +197,15 @@
                 </li>
                 <li class="benefits-section__list_item cards">
                   <article class="cards__content">
-                    <div class="benefits-section__icon-container">
+                    <div class="cards__icon-container">
                       <svg width="24" height="24">
                         <use
                           href="src/assets/icons/symbol-defs.svg#icon-message"
                         />
                       </svg>
                     </div>
-                    <h3 class="benefits-section__card-title">Communication</h3>
-                    <p class="benefits-section__card-description">
+                    <h3 class="cards__title">Communication</h3>
+                    <p class="cards__description">
                       Understanding your needs and wants is my priority and I am
                       always open to discussions and corrections.
                     </p>
@@ -213,15 +213,15 @@
                 </li>
                 <li class="benefits-section__list_item cards">
                   <article class="cards__content">
-                    <div class="benefits-section__icon-container">
+                    <div class="cards__icon-container">
                       <svg width="24" height="24">
                         <use
                           href="src/assets/icons/symbol-defs.svg#icon-brush"
                         />
                       </svg>
                     </div>
-                    <h3 class="benefits-section__card-title">Art</h3>
-                    <p class="benefits-section__card-description">
+                    <h3 class="cards__title">Art</h3>
+                    <p class="cards__description">
                       Thanks to my creative nature, I am ready to accept
                       challenges and help you bring your ideas to life.
                     </p>
@@ -229,17 +229,17 @@
                 </li>
                 <li class="benefits-section__list__card cards">
                   <article class="cards__content">
-                    <div class="benefits-section__icon-container">
+                    <div class="cards__icon-container">
                       <svg width="24" height="24">
                         <use
                           href="src/assets/icons/symbol-defs.svg#icon-hourglass"
                         />
                       </svg>
                     </div>
-                    <h3 class="benefits-section__card-title">
+                    <h3 class="cards__title">
                       Urgent execution
                     </h3>
-                    <p class="benefits-section__card-description">
+                    <p class="cards__description">
                       I understand how important time is to you. Ready to work
                       quickly and efficiently, without reducing the quality of
                       work.
@@ -248,7 +248,7 @@
                 </li>
               </ul>
               <button
-                class="benefits-section__card-button main-button"
+                class="benefits-section__button main-button"
                 type="button"
               >
                 Order the project
@@ -294,7 +294,7 @@
                   />
                 </figure>
               </article>
-              <div class="projects-section__controls">
+              <div class="controls-button-container">
                 <button
                   class="project-section__controls__button control-button"
                 >
@@ -472,9 +472,61 @@
               <div class="section-title">
                 <h2>Reviews</h2>
               </div>
+              <div class="reviews-section__card cards">
+                <article class="cards__content">
+                  <div class="cards__icon-container reviews-section__card__icon">
+                   <img class="cards__icon" src="./src/assets/images/girl-avatar-feedback.jpg" alt="" width="48" height="48">
+                  </div>
+                  <h3 class="cards__title cards__title--small-margin">Natalia</h3>
+                  <p class="cards__description">Work with was extraordinary! He turned out to be a very competent and responsible specialist. The projects were completed on time and the result exceeded my expectations</p>
+                </article>
+              </div>
+              <div class="controls-button-container">
+                <button
+                  class="control-button"
+                >
+                  <svg width="28" height="28">
+                    <use
+                      href="src/assets/icons/symbol-defs.svg#icon-arrow-big"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="control-button is-rotated control-button--is-active"
+                >
+                  <svg width="28" height="28">
+                    <use
+                      class="control-button--is-active"
+                      href="src/assets/icons/symbol-defs.svg#icon-arrow-big"
+                    />
+                  </svg>
+                </button>
+              </div>
           </section>
         </main>
-        <footer></footer>
+        <footer>
+          <div class="container">
+            <div class="contact-section">
+              <div class="contact-header">
+                <img src="" alt="">
+                <h2>Lets work together</h2>
+              </div>
+              <form action="" class="contact-form" >
+              <div class="contact-form__container">
+                <label for="user-mail"></label>
+                <input type="email" name="user-mail" id="" placeholder="clients@gmail.com">
+                <label for="user-comment"></label>
+                <input type="text" name="user-comment" id="" placeholder="comments">
+              </div>
+                <button type="submit">Send</button>
+              </form>
+              <address>
+                <a href="mailto:">lloydjefferson@gmail.com</a>
+                <a href="tel:+">+380 11 1111 11 11</a>
+              </address>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
     <script type="module" src="./src/main.js"></script>
