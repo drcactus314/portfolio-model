@@ -16,6 +16,7 @@
 @use 'components/button';
 @use 'components/section-title';
 @use 'components/project-card';
+@use 'components/form';
 
 
 @use 'sections/hero';
@@ -27,3 +28,5 @@
 @use 'sections/faq';
 @use 'sections/works';
 @use 'sections/review';
+@use 'sections/contact';
+@use 'sections/connect';

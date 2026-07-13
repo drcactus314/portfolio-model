@@ -1,0 +1,15 @@
+.connect-section{
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    gap: 0.25rem;
+    &__link{
+    color: var(--primary-white-color);
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-family: "InterTight";
+    border: 1px solid color-mix(in srgb, var(--primary-white-color), transparent 60%);
+    border-radius: 4rem;
+    padding: 0.625rem 0.75rem;
+    }
+}

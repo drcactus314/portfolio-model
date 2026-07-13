@@ -1,0 +1,19 @@
+.contact-section {
+    margin-top: 4rem;
+  &__header {
+    margin-top: 2rem;
+    display: flex;
+    gap: 0.5rem;
+    &__title {
+      font-size: 2.5rem;
+      line-height: 1;
+      color: var(--primary-white-color);
+      font-family: "InterTight";
+      text-transform: uppercase;
+    }
+    &__title span {
+      color: var(--primary-red-color);
+    }
+  }
+
+}
