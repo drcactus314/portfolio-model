@@ -32,6 +32,7 @@
   border: 1px solid color-mix(in srgb, var(--primary-white-color), transparent 80%);
   border-radius: 50%;
   padding: 0.85rem;
+  stroke: var(--primary-gray-color);
   &--is-active {
     border: 1px solid color-mix(in srgb, var(--primary-white-color), transparent 20%);
     stroke: var(--primary-white-color);
