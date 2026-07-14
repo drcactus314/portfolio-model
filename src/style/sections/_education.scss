@@ -1,7 +1,8 @@
 @use "../base/mixins" as m;
+@use "../base/variables" as *;
 
 .education-section {
-  margin-top: 0.75rem;
+  margin-top: 1.2rem;
   &__skills {
     margin-top: 2rem;
     @include m.flex-between;
@@ -30,8 +31,12 @@
       }
     }
     &__button{
+      stroke: var(--primary-gray-color);
         border: none;
         transform: rotate(180deg);
     }
   }
+}
+.education-section  hr{
+  margin-top: 2rem;
 }

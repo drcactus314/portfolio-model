@@ -1,0 +1,52 @@
+@use "../base/variables" as *;
+
+.mobile-menu {
+  
+      position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background:
+      repeating-linear-gradient(90deg, rgb(0, 0, 0, 0.2) 0%, transparent 9%),
+      repeating-linear-gradient(90deg, rgb(0, 0, 0, 0.1) 0%, transparent 9%),
+      linear-gradient(
+        to right,
+        var(--red-gradient) 0%,
+        var(--dark-red-gradient) 32%,
+        var(--dark-gradient) 50%
+      );
+
+      &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      &__link {
+        font-family: "interTight";
+        font-size: 1rem;
+        color: var(--primary-white-color);
+        text-decoration: underline;
+      }
+      &__button{
+        position: fixed;
+        bottom: 4rem;
+        padding: 0.875rem 1.95rem !important;
+        background-color: var(--primary-red-color) !important; 
+        border: 1px solid var(--primary-red-color) !important ;
+        font-size: 0.875rem !important;
+      }
+      &__close-button{
+          position: fixed;
+          top: 2rem;
+          right: 1rem;
+          background-color: transparent;
+      }
+  }
+
+  
+

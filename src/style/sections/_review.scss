@@ -4,9 +4,22 @@
     &__card{
         margin-top: 2rem;
         background-color: transparent;
-        border: 1px solid color-mix(in srgb, var(--primary-white-color), transparent 80%);
+        
         &__icon{
             padding: 0;
         }
+    }
+    &__list{
+        font-family: "InterTight";
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 1rem;
+    }
+    &__item{
+        min-width: 343px;
+        padding: 2rem 1.5rem;
+        border: 1px solid color-mix(in srgb, var(--primary-white-color), transparent 80%);
+        border-radius: 24px;
     }
 }

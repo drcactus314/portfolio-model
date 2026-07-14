@@ -1,5 +1,15 @@
 .projects-section{
     margin-top: 4rem;
+    &__list{
+      display: flex;
+      flex-wrap: no-wrap;
+      overflow-x: auto;
+      gap: 1rem;
+    }
+    &__item{
+      flex-shrink: 0;
+      width: 343px;
+    }
     &__controls{
         margin-top: 2rem;
         display: flex;

@@ -10,6 +10,7 @@
 @use 'layout/container';
 @use 'layout/header';
 @use 'layout/wrapper-container';
+@use 'layout/mobile-menu';
 
 @use 'components/icon';
 @use 'components/cards';
@@ -17,6 +18,7 @@
 @use 'components/section-title';
 @use 'components/project-card';
 @use 'components/form';
+@use 'components/modal';
 
 
 @use 'sections/hero';

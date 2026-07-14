@@ -24,13 +24,27 @@
                 </svg>
               </a>
             </div>
-            <nav class="header__menu">
+            <div class="header__menu">
               <button type="button" class="header__menu__button">
                 <svg class="header__menu__button__logo">
                   <use href="src/assets/icons/symbol-defs.svg#icon-menu" />
                 </svg>
               </button>
-            </nav>
+            </div>     
+              <!-- <nav class="mobile-menu">
+                <button class="mobile-menu__close-button"><svg width="24" height="24">
+                  <use href="src/assets/icons/symbol-defs.svg#icon-close" />
+                </svg></button>
+                <ul class="mobile-menu__list">
+                  <li class="mobile-menu__item"><a href="" class="mobile-menu__link">About me</a></li>
+                  <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Benefits</a></li>
+                  <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Projects</a></li>
+                  <li class="mobile-menu__item"><a href="" class="mobile-menu__link">FAQ</a></li>
+                </ul>
+                <button class="mobile-menu__button main-button">
+                  Order the Project
+                </button>
+              </nav> -->
           </header>
           <section class="hero-section">
             <h1 class="hero-section__title">
@@ -59,7 +73,7 @@
                   <p>
                     I work with people all over the world to create impressive
                     and
-                    <span>functional</span> <span>websites</span> that reflect
+                    <span style="color: #ed3b44;">functional</span> <span style="color: color-mix(in srgb, #fafafa, transparent 60%)">websites</span> that reflect
                     each client's unique personality.
                   </p>
                 </div>
@@ -105,8 +119,8 @@
                     that allow me to create efficient and scalable software.
                   </p>
                 </div>
+                <hr />
               </div>
-              <hr />
               <section class="role-section">
                 <div class="section-title">
                   <h2>Role</h2>
@@ -131,6 +145,7 @@
                     </svg>
                   </button>
                 </div>
+                <hr>
                 <div class="education-section__skills">
                   <ul class="education-section__skills__list">
                     <li
@@ -260,40 +275,111 @@
               <div class="section-title">
                 <h2>Projects</h2>
               </div>
-              <article class="projects-section__container project-card">
-                <div class="project-card__info">
-                  <ul class="project-card__info__tags-list">
-                    <li class="project-card__info__tags-list__item">
-                      <p>#react</p>
-                    </li>
-                    <li class="project-card__info__tags-list__item">
-                      <p>#js</p>
-                    </li>
-                    <li class="project-card__info__tags-list__item">
-                      <p>#nodejs</p>
-                    </li>
-                    <li class="project-card__info__tags-list__item">
-                      <p>#git</p>
-                    </li>
-                  </ul>
-                  <h3 class="project-card__info__title">
-                    Programming Across Borders: Ideas, Technologies, Innovations
-                  </h3>
-                  <button
-                    class="main-button project-card__info__button"
-                    type="button"
-                  >
-                    See project
-                  </button>
-                </div>
-                <figure class="project-card__image">
-                  <img
-                    class="project-card__image__item"
-                    src="./src/assets/images/registration-project-books.png"
-                    alt=""
-                  />
-                </figure>
-              </article>
+              <ul class="projects-section__list">
+                <li class="projects-section__item">
+                  <article class="projects-section__container project-card">
+                  <div class="project-card__info">
+                    <ul class="project-card__info__tags-list">
+                      <li class="project-card__info__tags-list__item">
+                        <p>#react</p>
+                      </li>
+                      <li class="project-card__info__tags-list__item">
+                        <p>#js</p>
+                      </li>
+                      <li class="project-card__info__tags-list__item">
+                        <p>#nodejs</p>
+                      </li>
+                      <li class="project-card__info__tags-list__item">
+                        <p>#git</p>
+                      </li>
+                    </ul>
+                    <h3 class="project-card__info__title">
+                      Programming Across Borders: Ideas, Technologies, Innovations
+                    </h3>
+                    <button
+                      class="main-button project-card__info__button"
+                      type="button"
+                    >
+                      See project
+                    </button>
+                  </div>
+                  <figure class="project-card__image">
+                    <img
+                      class="project-card__image__item"
+                      src="./src/assets/images/registration-project-books.png"
+                      alt=""
+                    />
+                  </figure>
+                </article></li>
+                <li class="projects-section__item"><article class="projects-section__container project-card">
+                  <div class="project-card__info">
+                    <ul class="project-card__info__tags-list">
+                      <li class="project-card__info__tags-list__item">
+                        <p>#react</p>
+                      </li>
+                      <li class="project-card__info__tags-list__item">
+                        <p>#js</p>
+                      </li>
+                      <li class="project-card__info__tags-list__item">
+                        <p>#nodejs</p>
+                      </li>
+                      <li class="project-card__info__tags-list__item">
+                        <p>#git</p>
+                      </li>
+                    </ul>
+                    <h3 class="project-card__info__title">
+                      Programming Across Borders: Ideas, Technologies, Innovations
+                    </h3>
+                    <button
+                      class="main-button project-card__info__button"
+                      type="button"
+                    >
+                      See project
+                    </button>
+                  </div>
+                  <figure class="project-card__image">
+                    <img
+                      class="project-card__image__item"
+                      src="./src/assets/images/registration-project-books-and-people.png"
+                      alt=""
+                    />
+                  </figure>
+                </article></li>
+                <li class="projects-section__item"><article class="projects-section__container project-card">
+                  <div class="project-card__info">
+                    <ul class="project-card__info__tags-list">
+                      <li class="project-card__info__tags-list__item">
+                        <p>#react</p>
+                      </li>
+                      <li class="project-card__info__tags-list__item">
+                        <p>#js</p>
+                      </li>
+                      <li class="project-card__info__tags-list__item">
+                        <p>#nodejs</p>
+                      </li>
+                      <li class="project-card__info__tags-list__item">
+                        <p>#git</p>
+                      </li>
+                    </ul>
+                    <h3 class="project-card__info__title">
+                      Programming Across Borders: Ideas, Technologies, Innovations
+                    </h3>
+                    <button
+                      class="main-button project-card__info__button"
+                      type="button"
+                    >
+                      See project
+                    </button>
+                  </div>
+                  <figure class="project-card__image">
+                    <img
+                      class="project-card__image__item"
+                      src="./src/assets/images/dog-in-vet-and-people.png"
+                      alt=""
+                    />
+                  </figure>
+                </article></li>
+              </ul>
               <div class="controls-button-container">
                 <button
                   class="project-section__controls__button control-button"
@@ -408,7 +494,7 @@
                         </svg>
                       </button>
                     </div>
-                    <p class="faq-section__description"></p>
+                    <p class="faq-section__description"> In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
                   </article>
                 </li>
                 <hr />
@@ -426,7 +512,7 @@
                         </svg>
                       </button>
                     </div>
-                    <p class="faq-section__description"></p>
+                    <p class="faq-section__description">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
                   </article>
                 </li>
                 <hr />
@@ -445,7 +531,7 @@
                         </svg>
                       </button>
                     </div>
-                    <p class="faq-section__description"></p>
+                    <p class="faq-section__description">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
                   </article>
                 </li>
                 <hr />
@@ -454,17 +540,23 @@
           </section>
           <section class="works-section">
             <div class="works-section__background">
-              <ul class="works-section__list">
-                <li><a href=""><img src="src/assets/images/project-arm-and-clock.png" alt="" class="works-section__list__image"></a></li>
-                <li><a href=""><img src="src/assets/images/project-basket-of-vegatables.png" alt="" class="works-section__list__image"></a></li>
-                <li><a href=""><img src="src/assets/images/project-buildings.png" alt="" class="works-section__list__image"></a></li>
-                <li><a href=""><img src="src/assets/images/project-arm-and-clock.png" alt="" class="works-section__list__image"></a></li>
-                <li><a href=""><img src="src/assets/images/project-arm-and-clock.png" alt="" class="works-section__list__image"></a></li>
-                <li><a href=""><img src="src/assets/images/project-arm-and-clock.png" alt="" class="works-section__list__image"></a></li>
-                <li><a href=""><img src="src/assets/images/project-arm-and-clock.png" alt="" class="works-section__list__image"></a></li>
-                <li><a href=""><img src="src/assets/images/project-arm-and-clock.png" alt="" class="works-section__list__image"></a></li>
-                <li><a href=""><img src="src/assets/images/project-arm-and-clock.png" alt="" class="works-section__list__image"></a></li>
-              </ul>
+              <div class="works-section__container">
+                <ul class="works-section__list is-top">
+                  <li><a href=""><img src="src/assets/images/project-fitness-girl.png" alt="" class="works-section__list__image"></a></li>
+                  <li><a href=""><img src="src/assets/images/project-buildings.png" alt="" class="works-section__list__image"></a></li>
+                  <li><a href=""><img src="src/assets/images/project-fresh-oranges-and-citruses.png" alt="" class="works-section__list__image"></a></li>
+                </ul>
+                 <ul class="works-section__list is-middle">
+                  <li><a href=""><img src="src/assets/images/project-man-and-woman-check-finances.png" alt="" class="works-section__list__image"></a></li>
+                  <li><a href=""><img src="src/assets/images/project-arm-and-clock.png" alt="" class="works-section__list__image"></a></li>
+                  <li><a href=""><img src="src/assets/images/project-child-is-smiling-with-headphones.png" alt="" class="works-section__list__image"></a></li>
+                 </ul>
+                 <ul class="works-section__list is-bottom">
+                  <li><a href=""><img src="src/assets/images/project-basket-of-vegatables.png" alt="" class="works-section__list__image"></a></li>
+                  <li><a href=""><img src="src/assets/images/project-girl-is-training.png" alt="" class="works-section__list__image"></a></li>
+                  <li><a href=""><img src="src/assets/images/project-girl-in-vyshyvanka.png" alt="" class="works-section__list__image"></a></li>
+                 </ul>
+              </div>
             </div>
           </section>
           <section class="reviews-section">
@@ -472,33 +564,57 @@
               <div class="section-title">
                 <h2>Reviews</h2>
               </div>
-              <div class="reviews-section__card cards">
-                <article class="cards__content">
+              <div class="reviews-section__card">
+               <ul class="reviews-section__list">
+                <li> 
+                  <article class="reviews-section__item">
                   <div class="cards__icon-container reviews-section__card__icon">
                    <img class="cards__icon" src="./src/assets/images/girl-avatar-feedback.jpg" alt="" width="48" height="48">
                   </div>
                   <h3 class="cards__title cards__title--small-margin">Natalia</h3>
                   <p class="cards__description">Work with was extraordinary! He turned out to be a very competent and responsible specialist. The projects were completed on time and the result exceeded my expectations</p>
                 </article>
+              </li>
+                <li> 
+                  <article class="reviews-section__item">
+                  <div class="cards__icon-container reviews-section__card__icon">
+                   <img class="cards__icon" src="./src/assets/images/man-avatar-feedback.jpg" alt="" width="48" height="48">
+                  </div>
+                  <h3 class="cards__title cards__title--small-margin">Dmytro</h3>
+                  <p class="cards__description">I have the honor to recommend him as an exceptional professional in his field. His knowledge and expertise are undeniable. Cooperation with him always brings impressive results.</p>
+                </article>
+              </li>
+                <li> 
+                  <article class="reviews-section__item">
+                  <div class="cards__icon-container reviews-section__card__icon">
+                   <img class="cards__icon" src="./src/assets/images/Featured icon.jpg" alt="" width="48" height="48">
+                  </div>
+                  <h3 class="cards__title cards__title--small-margin">Anna</h3>
+                  <p class="cards__description">The developed project impresses with its quality and efficiency. The code is cleanly written and the functionality exceeds expectations. Extremely satisfied with the cooperation!</p>
+                </article>
+              </li>
+                <li>
+                   <article class="reviews-section__item">
+                  <div class="cards__icon-container reviews-section__card__icon">
+                   <img class="cards__icon" src="./src/assets/images/girl-avatar4-feeedback.jpg" alt="" width="48" height="48">
+                  </div>
+                  <h3 class="cards__title cards__title--small-margin">Ivetta</h3>
+                  <p class="cards__description">Thanks for the excellent work on the project! His talent and professionalism deserve recognition. I recommend it to everyone who is looking for an expert in the field of software development.</p>
+                </article>
+              </li>
+               </ul>
               </div>
               <div class="controls-button-container">
-                <button
-                  class="control-button"
-                >
+                <button class="control-button">
                   <svg width="28" height="28">
-                    <use
-                      href="src/assets/icons/symbol-defs.svg#icon-arrow-big"
-                    />
+                    <use href="src/assets/icons/symbol-defs.svg#icon-arrow-big"/>
                   </svg>
                 </button>
-                <button
-                  class="control-button is-rotated control-button--is-active"
-                >
+                <button class="control-button is-rotated control-button--is-active">
                   <svg width="28" height="28">
                     <use
                       class="control-button--is-active"
-                      href="src/assets/icons/symbol-defs.svg#icon-arrow-big"
-                    />
+                      href="src/assets/icons/symbol-defs.svg#icon-arrow-big"/>
                   </svg>
                 </button>
               </div>
@@ -508,7 +624,7 @@
           <div class="container">
             <section class="contact-section">
               <div class="contact-section__header">
-                <img class="contact-section__header__image" src="src/assets/images/man-works-on-laptop.jpg" alt="man-works-on-laptop" height="44" width="44">
+                <img class="contact-section__header__image" src="src/assets/images/footer.jpg" alt="man-works-on-laptop" height="44" width="44">
                 <p class="contact-section__header__title">Let's <span>work</span> </p>
               </div>
               <p class="contact-section__header__title">together</p>
@@ -528,6 +644,18 @@
             </section>
           </div>
         </footer>
+        <div class="backdrop is-hidden">
+          <div class="modal">
+            <button class="modal__close-button">
+              <svg width="24" height="24">
+              <use href="src/assets/icons/symbol-defs.svg#icon-close" />
+            </svg>
+          </button>
+            <h3 class="modal__title">Thank you for your interest in cooperation!</h3>
+            <p class="modal__description">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+          </div>
+         
+        </div>
       </div>
     </div>
     <script type="module" src="./src/main.js"></script>

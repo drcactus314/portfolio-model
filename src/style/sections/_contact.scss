@@ -4,6 +4,9 @@
     margin-top: 2rem;
     display: flex;
     gap: 0.5rem;
+    &__image{
+      border-radius: 12px;
+    }
     &__title {
       font-size: 2.5rem;
       line-height: 1;
