@@ -1,5 +1,10 @@
+@use '../base/variables' as *;
+
 .projects-section{
     margin-top: 4rem;
+    @media (min-width: $bp-tablet) {
+      margin-top: 6rem;
+    }
     &__list{
       display: flex;
       flex-wrap: no-wrap;
@@ -7,8 +12,8 @@
       gap: 1rem;
     }
     &__item{
+      width: 100%;
       flex-shrink: 0;
-      width: 343px;
     }
     &__controls{
         margin-top: 2rem;

@@ -1,4 +1,4 @@
-@use '../base/variables' as *;
+@use "../base/variables" as *;
 
 .hero-section {
   &__title {
@@ -9,31 +9,49 @@
     text-transform: uppercase;
     padding-top: 170px;
     color: var(--primary-white-color);
+    @media (min-width: $bp-tablet) {
+      padding-right: 6.5rem;
+      font-size: 90px;
+    }
   }
   &__social-media {
     &__list {
       padding-top: 212px;
-      padding-bottom: 32px;
+      padding-bottom: 2rem;
       display: flex;
+      flex-wrap: wrap;
       gap: 4px;
       justify-content: center;
+      font-size: 0.875rem;
+      @media (min-width: $bp-tablet) {
+        padding-top: 188px;
+        justify-content: right;
+        font-size: 1rem;
+      }
     }
     &__list li {
       width: 37px;
       height: 37px;
-      border: 1px solid color-mix(in srgb, var(--primary-white-color), transparent 80%);
+      border: 1px solid
+        color-mix(in srgb, var(--primary-white-color), transparent 80%);
       border-radius: 50%;
       display: flex;
-      justify-content: center;
       align-items: center;
-      font-size: 14px;
+      justify-content: center;
+      @media (min-width: $bp-tablet) {
+        width: 55px;
+        height: 55px;
+      }
     }
     &__list li a {
       color: var(--primary-white-color);
     }
     &__list li:last-child {
-      width: 178px;
+      width: 183px;
       border-radius: 25px;
+      @media (min-width: $bp-tablet) {
+        width: 230px;
+      }
     }
   }
 }

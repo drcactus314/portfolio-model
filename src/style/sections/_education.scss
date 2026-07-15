@@ -3,6 +3,9 @@
 
 .education-section {
   margin-top: 1.2rem;
+  @media (min-width: $bp-tablet) {
+    margin-top: 2rem;
+  }
   &__skills {
     margin-top: 2rem;
     @include m.flex-between;
@@ -12,31 +15,47 @@
       display: flex;
       flex-wrap: nowrap;
       overflow-x: auto;
-      
+
       &__item {
         width: 130px;
         height: 130px;
         flex: 0 0 auto;
         background-color: transparent;
-        border: 1px solid color-mix(in srgb, var(--primary-white-color), transparent 80%);
+        border: 1px solid
+          color-mix(in srgb, var(--primary-white-color), transparent 80%);
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         font-family: "InterTight";
         color: var(--primary-white-color);
-        &-active{
+        @media (min-width: $bp-tablet) {
+          width: 200px;
+        height: 200px;
+        }
+        &-active {
           background-color: var(--primary-red-color);
         }
       }
     }
-    &__button{
+    &__button {
       stroke: var(--primary-gray-color);
-        border: none;
-        transform: rotate(180deg);
+      border: none;
+      transform: rotate(180deg);
     }
   }
 }
-.education-section  hr{
+.education-section hr {
   margin-top: 2rem;
+}
+
+.button-skills{
+  &__icon{
+    width: 28px;
+    height: 28px;
+    @media (min-width: $bp-tablet) {
+      width: 40px;
+    height: 40px;
+    }
+  }
 }

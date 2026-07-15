@@ -1,3 +1,4 @@
+@use '../base/variables' as *;
 .benefits-section{
     margin-top: 4rem;
 
@@ -5,9 +6,14 @@
         margin-top: 2rem;
         display: grid;
         gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(343px, 1fr)) ;
+        
     }
     &__button{
         margin-top: 2rem;
+        @media (min-width: $bp-tablet) {
+        margin-top: 4rem;
+        }
     }
 }
 

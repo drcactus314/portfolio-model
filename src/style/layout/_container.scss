@@ -2,17 +2,16 @@
 
 .container{
     width: 100%;
-    max-width: $bp-mobile;
+    max-width: $bp-desktop;
     margin: 0 auto;
     padding: 0 1rem ;
    
+    @media (min-width: $bp-tablet) {
+        padding: 0 2rem ;
+    }
 }
 
 .wrapper-container .container{
-    width: 100%;
-    max-width: $bp-mobile;
-    margin: 0 auto;
-    padding: 0 1rem ;
     position: relative;
     z-index: 3;
    

@@ -1,13 +1,29 @@
 @use "../base/mixins" as m;
+@use "../base/variables" as *;
 
 .button {
-  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 36px;
   height: 36px;
   border-radius: 50%;
   border: 1px solid
     color-mix(in srgb, var(--primary-white-color), transparent 80%);
   background-color: transparent;
+
+  @media (min-width: $bp-tablet) {
+    height: 40px;
+    width: 40px;
+  }
+  &__icon{
+    width: 18px;
+    height: 18px;
+    @media (min-width: $bp-tablet) {
+      height: 20px;
+      width: 20px;
+    }
+  }
 }
 
 .main-button {
@@ -26,15 +42,38 @@
   display: flex;
   justify-content: center;
   gap: 0.75rem;
+  @media (min-width: $bp-tablet) {
+    margin-top: 4rem;
+  }
 }
+
 .control-button {
+
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   border: 1px solid color-mix(in srgb, var(--primary-white-color), transparent 80%);
   border-radius: 50%;
-  padding: 0.85rem;
   stroke: var(--primary-gray-color);
   &--is-active {
     border: 1px solid color-mix(in srgb, var(--primary-white-color), transparent 20%);
     stroke: var(--primary-white-color);
   }
+
+  &__icon{
+    width: 28px;
+    height: 28px;
+    @media (min-width: $bp-tablet) {
+      height: 32px;
+      width: 32px;
+    }
+  }
+  @media (min-width: $bp-tablet) {
+    height: 68px;
+    width: 68px;
+  }
+  
 }

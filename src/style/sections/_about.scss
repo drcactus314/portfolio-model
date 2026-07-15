@@ -1,5 +1,5 @@
-@use '../base/mixins' as m;
-
+@use "../base/mixins" as m;
+@use "../base/variables" as *;
 
 .about-section {
   &__quote {
@@ -10,13 +10,16 @@
     align-items: stretch;
     gap: 16px;
     &__item {
-      font-size: 24px;
+      font-size: 1.5rem;
       text-transform: uppercase;
       color: var(--primary-white-color);
-    }
-    &__item p {
       line-height: 1.2;
-      padding: 32px 32px 272px;
+      padding: 2rem 2rem 17rem;
+      @media (min-width: $bp-tablet) {
+        font-size: 2.375rem;
+        line-height: 1.05;
+        padding: 4rem 4rem 27.25rem;
+      }
     }
     &__image img {
       width: 100%;
@@ -26,15 +29,15 @@
       object-position: 40% center;
     }
   }
-  &__text{
-    &__description{
+  &__text {
+    &__description {
       margin-top: 0.75rem;
     }
-    &__description p:last-child{
+    &__description p:last-child {
       margin-top: 2rem;
     }
   }
-  &__text hr{
+  &__text hr {
     margin-top: 1.2rem;
   }
 }

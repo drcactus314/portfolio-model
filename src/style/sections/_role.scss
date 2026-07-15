@@ -1,6 +1,11 @@
+@use '../base/variables' as *;
+
 .role-section{
     margin-top: 1.2rem;
     margin-bottom: 2rem;
+    @media (min-width: $bp-tablet) {
+       margin-top: 2rem;
+      }
 }
 .role-section button{
     transform: rotate(180deg);
