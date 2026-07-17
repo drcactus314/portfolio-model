@@ -11,6 +11,9 @@
     @include m.flex-between;
     align-items: center;
     gap: 47px;
+    @media (min-width: $bp-desktop) {
+      margin-top: 6rem;
+    }
     &__list {
       display: flex;
       flex-wrap: nowrap;
@@ -32,6 +35,7 @@
         @media (min-width: $bp-tablet) {
           width: 200px;
         height: 200px;
+        font-size: 1.25rem;
         }
         &-active {
           background-color: var(--primary-red-color);

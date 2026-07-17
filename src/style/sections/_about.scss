@@ -4,11 +4,14 @@
 .about-section {
   &__quote {
     padding-top: 4rem;
-    padding-bottom: 2rem;
     display: grid;
     grid-template-rows: 1fr 1fr;
     align-items: stretch;
     gap: 16px;
+    @media (min-width: $bp-desktop) {
+      padding-top: 6rem;
+      grid-template: 1fr /1fr 1fr;
+    }
     &__item {
       font-size: 1.5rem;
       text-transform: uppercase;
@@ -18,6 +21,11 @@
       @media (min-width: $bp-tablet) {
         font-size: 2.375rem;
         line-height: 1.05;
+        padding: 4rem 4rem 27.25rem;
+      }
+      @media (min-width: $bp-desktop) {
+        font-size: 2.375rem;
+        line-height: 0.9;
         padding: 4rem 4rem 27.25rem;
       }
     }
@@ -30,8 +38,20 @@
     }
   }
   &__text {
+    margin-top: 2rem;
+    @media (min-width: $bp-desktop) {
+      margin-top: 6rem;
+    }
     &__description {
+      display: flex;
+      flex-direction: column;
+      width: 93%;
       margin-top: 0.75rem;
+      @media (min-width: $bp-desktop) {
+       padding: 0px;
+       display: grid;
+       grid-template-columns: 50% 1fr;
+      }
     }
     &__description p:last-child {
       margin-top: 2rem;

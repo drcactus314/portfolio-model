@@ -5,11 +5,17 @@
     @media (min-width: $bp-tablet) {
       margin-top: 6rem;
     }
+    @media (min-width: $bp-desktop) {
+      margin-top: 10.25rem;
+    }
     &__list{
       display: flex;
       flex-wrap: no-wrap;
       overflow-x: auto;
       gap: 1rem;
+      @media (min-width: $bp-desktop) {
+        margin-top: 2rem;
+      }
     }
     &__item{
       width: 100%;
@@ -20,6 +26,9 @@
         display: flex;
         justify-content: center;
         gap: 0.75rem;
+        @media (min-width: $bp-desktop) {
+          margin-top: 4rem;
+        }
       }
 }
 

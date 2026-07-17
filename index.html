@@ -24,8 +24,14 @@
                 </svg>
               </a>
             </div>
-            <nav class="header__menu">
-              <a href="">Menu</a>
+            <nav class="header__main-menu">
+              <a href="" class="header__main-menu__link">Menu</a>
+              <ul class="header__menu is-hidden">
+                <li class="header__menu__item"><a href="#about" class="header__menu__link">About me</a></li>
+                <li class="header__menu__item"><a href="#benefits" class="header__menu__link">Benefits</a></li>
+                <li class="header__menu__item"><a href="#projects" class="header__menu__link">Projects</a></li>
+                <li class="header__menu__item"><a href="#faq" class="header__menu__link">FAQ</a></li>
+              </ul>
             </nav>
             <div class="header__main-button">
               <button type="button" class="main-button">Order the project</button>
@@ -37,20 +43,20 @@
                 </svg>
               </button>
             </div>     
-              <!-- <nav class="mobile-menu">
+              <nav class="mobile-menu is-hidden">
                 <button class="mobile-menu__close-button"><svg width="24" height="24">
                   <use href="src/assets/icons/symbol-defs.svg#icon-close" />
                 </svg></button>
-                <ul class="mobile-menu__list">
-                  <li class="mobile-menu__item"><a href="" class="mobile-menu__link">About me</a></li>
-                  <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Benefits</a></li>
-                  <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Projects</a></li>
-                  <li class="mobile-menu__item"><a href="" class="mobile-menu__link">FAQ</a></li>
+                <ul class="header__menu is-underlined">
+                  <li class="header__menu__item"><a href="" class="header__menu__link is-underlined">About me</a></li>
+                  <li class="header__menu__item"><a href="" class="header__menu__link is-underlined">Benefits</a></li>
+                  <li class="header__menu__item"><a href="" class="header__menu__link is-underlined">Projects</a></li>
+                  <li class="header__menu__item"><a href="" class="header__menu__link is-underlined">FAQ</a></li>
                 </ul>
                 <button class="mobile-menu__button main-button">
                   Order the Project
                 </button>
-              </nav> -->
+              </nav>
           </header>
           <section class="hero-section">
             <h1 class="hero-section__title">
@@ -72,7 +78,7 @@
       </div>
       <div class="wrapper-theme-container">
         <main>
-          <section class="about-section">
+          <section class="about-section" id="about">
             <div class="container">
               <div class="about-section__quote">
                 <div class="about-section__quote__item cards">
@@ -101,8 +107,10 @@
                     </svg>
                   </button>
                 </div>
-                <div class="about-section__text__description">
-                  <p class="text">
+                <div class="about-section__text__description ">
+                <div></div>
+                 <div>
+                   <p class="text">
                     I am Lloyd Jefferson, a talented programmer with extensive
                     expertise in software development. I have an understanding
                     of different programming languages and technologies, always
@@ -124,6 +132,7 @@
                     programming languages, frameworks and architectural concepts
                     that allow me to create efficient and scalable software.
                   </p>
+                 </div>
                 </div>
                 <hr />
               </div>
@@ -138,6 +147,16 @@
                     </svg>
                   </button>
                 </div>
+                <div class="about-section__text__description ">
+                <div></div>
+                 <div>
+                <ul>
+                  <li><p class="text">Frontend development</p></li>
+                  <li><p class="text">HeadlessCMS,Wordpress</p></li>
+                  <li><p class="text">Blender(enjoy)</p></li>
+                </ul>
+                 </div>
+                </div>
               </section>
               <hr />
               <section class="education-section">
@@ -150,6 +169,16 @@
                       />
                     </svg>
                   </button>
+                </div>
+                  <div class="about-section__text__description">
+                <div></div>
+                 <div>
+                <ul>
+                  <li><p class="text">2018 - 2019  / Frontend Development Diploma, GoIT IT School, New York</p></li>
+                  <li><p class="text">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</p></li>
+                  <li><p class="text">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p></li>
+                </ul>
+                 </div>
                 </div>
                 <hr>
                 <div class="education-section__skills">
@@ -190,93 +219,98 @@
               </section>
             </div>
           </section>
-          <section class="benefits-section">
+          <section class="benefits-section" id="benefits">
             <div class="container">
               <div class="section-title">
                 <h2>Benefits working with me</h2>
               </div>
-              <ul class="benefits-section__list">
-                <li class="benefits-section__list__item cards">
-                  <article class="cards__content">
-                    <div class="cards__icon-container">
-                      <svg
-                        width="24"
-                        height="24"
-                        class="benefits-section__icon-size"
-                      >
-                        <use
-                          href="src/assets/icons/symbol-defs.svg#icon-user"
-                        />
-                      </svg>
-                    </div>
-                    <h3 class="cards__title">Expertise</h3>
-                    <p class="cards__description">
-                      As a highly experienced developer, I have deep knowledge
-                      of programming and website development.
-                    </p>
-                  </article>
-                </li>
-                <li class="benefits-section__list_item cards">
-                  <article class="cards__content">
-                    <div class="cards__icon-container">
-                      <svg width="24" height="24">
-                        <use
-                          href="src/assets/icons/symbol-defs.svg#icon-message"
-                        />
-                      </svg>
-                    </div>
-                    <h3 class="cards__title">Communication</h3>
-                    <p class="cards__description">
-                      Understanding your needs and wants is my priority and I am
-                      always open to discussions and corrections.
-                    </p>
-                  </article>
-                </li>
-                <li class="benefits-section__list_item cards">
-                  <article class="cards__content">
-                    <div class="cards__icon-container">
-                      <svg width="24" height="24">
-                        <use
-                          href="src/assets/icons/symbol-defs.svg#icon-brush"
-                        />
-                      </svg>
-                    </div>
-                    <h3 class="cards__title">Art</h3>
-                    <p class="cards__description">
-                      Thanks to my creative nature, I am ready to accept
-                      challenges and help you bring your ideas to life.
-                    </p>
-                  </article>
-                </li>
-                <li class="benefits-section__list__card cards">
-                  <article class="cards__content">
-                    <div class="cards__icon-container">
-                      <svg width="24" height="24">
-                        <use
-                          href="src/assets/icons/symbol-defs.svg#icon-hourglass"
-                        />
-                      </svg>
-                    </div>
-                    <h3 class="cards__title">
-                      Urgent execution
-                    </h3>
-                    <p class="cards__description">
-                      I understand how important time is to you. Ready to work
-                      quickly and efficiently, without reducing the quality of
-                      work.
-                    </p>
-                  </article>
-                </li>
-              </ul>
-              <button
-                class="benefits-section__button main-button"
-                type="button"
-              >
-                Order the project
-              </button>
+             <div class="benefits-section--grid">
+              <div></div>
+              <div>
+                <ul class="benefits-section__list">
+                  <li class="benefits-section__list__item cards">
+                    <article class="cards__content">
+                      <div class="cards__icon-container">
+                        <svg
+                          width="24"
+                          height="24"
+                          class="benefits-section__icon-size"
+                        >
+                          <use
+                            href="src/assets/icons/symbol-defs.svg#icon-user"
+                          />
+                        </svg>
+                      </div>
+                      <h3 class="cards__title">Expertise</h3>
+                      <p class="cards__description">
+                        As a highly experienced developer, I have deep knowledge
+                        of programming and website development.
+                      </p>
+                    </article>
+                  </li>
+                  <li class="benefits-section__list_item cards">
+                    <article class="cards__content">
+                      <div class="cards__icon-container">
+                        <svg width="24" height="24">
+                          <use
+                            href="src/assets/icons/symbol-defs.svg#icon-message"
+                          />
+                        </svg>
+                      </div>
+                      <h3 class="cards__title">Communication</h3>
+                      <p class="cards__description">
+                        Understanding your needs and wants is my priority and I am
+                        always open to discussions and corrections.
+                      </p>
+                    </article>
+                  </li>
+                  <li class="benefits-section__list_item cards">
+                    <article class="cards__content">
+                      <div class="cards__icon-container">
+                        <svg width="24" height="24">
+                          <use
+                            href="src/assets/icons/symbol-defs.svg#icon-brush"
+                          />
+                        </svg>
+                      </div>
+                      <h3 class="cards__title">Art</h3>
+                      <p class="cards__description">
+                        Thanks to my creative nature, I am ready to accept
+                        challenges and help you bring your ideas to life.
+                      </p>
+                    </article>
+                  </li>
+                  <li class="benefits-section__list__card cards">
+                    <article class="cards__content">
+                      <div class="cards__icon-container">
+                        <svg width="24" height="24">
+                          <use
+                            href="src/assets/icons/symbol-defs.svg#icon-hourglass"
+                          />
+                        </svg>
+                      </div>
+                      <h3 class="cards__title">
+                        Urgent execution
+                      </h3>
+                      <p class="cards__description">
+                        I understand how important time is to you. Ready to work
+                        quickly and efficiently, without reducing the quality of
+                        work.
+                      </p>
+                    </article>
+                  </li>
+                </ul>
+                <button
+                  class="benefits-section__button main-button"
+                  type="button"
+                >
+                  Order the project
+                </button>
+              </div>
+             </div>
             </div>
           </section>
-          <section class="projects-section">
+          <section class="projects-section" id="projects">
             <div class="container">
               <div class="section-title">
                 <h2>Projects</h2>
@@ -409,22 +443,21 @@
               </div>
             </div>
           </section>
-          <section class="faq-section">
+          <section class="faq-section" id="faq">
             <div class="container">
               <div class="section-title">
                 <h2>Faq</h2>
               </div>
               <ul class="faq-section__list">
-                <hr />
                 <li>
                   <article>
                     <div class="faq-section__header">
                       <h3 class="faq-section__title">
-                        What programming languages ​​are most often used in your
+                        What programming languages are the most often used in your
                         project?
                       </h3>
                       <button class="button">
-                        <svg width="18" height="18">
+                        <svg class="button__icon" aria-hidden="true">
                           <use
                             href="src/assets/icons/symbol-defs.svg#icon-arrow-small"
                           />
@@ -439,7 +472,6 @@
                     </p>
                   </article>
                 </li>
-                <hr />
                 <li>
                   <article>
                     <div class="faq-section__header">
@@ -447,7 +479,7 @@
                         What are the deadlines for the project?
                       </h3>
                       <button class="button">
-                        <svg width="18" height="18">
+                        <svg class="button__icon" aria-hidden="true">
                           <use
                             href="src/assets/icons/symbol-defs.svg#icon-arrow-small"
                           />
@@ -464,7 +496,6 @@
                     </p>
                   </article>
                 </li>
-                <hr />
                 <li>
                   <article>
                     <div class="faq-section__header">
@@ -472,7 +503,7 @@
                         What payment methods do you accept?
                       </h3>
                       <button type="button" class="button">
-                        <svg width="18" height="18">
+                        <svg class="button__icon" aria-hidden="true">
                           <use
                             href="src/assets/icons/symbol-defs.svg#icon-arrow-small"
                           />
@@ -487,13 +518,12 @@
                     </p>
                   </article>
                 </li>
-                <hr />
                 <li>
                   <article>
                     <div class="faq-section__header">
                       <h3 class="faq-section__title">How can I contact you?</h3>
                       <button type="button" class="button is-rotated">
-                        <svg width="18" height="18">
+                        <svg class="button__icon" aria-hidden="true">
                           <use
                             href="src/assets/icons/symbol-defs.svg#icon-arrow-small"
                           />
@@ -503,7 +533,6 @@
                     <p class="faq-section__description"> In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
                   </article>
                 </li>
-                <hr />
                 <li>
                   <article>
                     <div class="faq-section__header">
@@ -511,7 +540,7 @@
                         Do you provide advice or support?
                       </h3>
                       <button type="button" class="button is-rotated">
-                        <svg width="18" height="18">
+                        <svg class="button__icon" aria-hidden="true">
                           <use
                             href="src/assets/icons/symbol-defs.svg#icon-arrow-small"
                           />
@@ -521,7 +550,6 @@
                     <p class="faq-section__description">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
                   </article>
                 </li>
-                <hr />
                 <li>
                   <article>
                     <div class="faq-section__header">
@@ -530,7 +558,7 @@
                         look like from idea to implementation?
                       </h3>
                       <button type="button" class="button is-rotated">
-                        <svg width="18" height="18">
+                        <svg class="button__icon" aria-hidden="true">
                           <use
                             href="src/assets/icons/symbol-defs.svg#icon-arrow-small"
                           />
@@ -540,7 +568,6 @@
                     <p class="faq-section__description">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
                   </article>
                 </li>
-                <hr />
               </ul>
             </div>
           </section>
@@ -565,7 +592,7 @@
               </div>
             </div>
           </section>
-          <section class="reviews-section">
+          <section class="reviews-section" id="reviews">
             <div class="container">
               <div class="section-title">
                 <h2>Reviews</h2>
@@ -610,14 +637,14 @@
               </li>
                </ul>
               </div>
-              <div class="controls-button-container">
+              <div class="controls-button-container reviews-section__button-container">
                 <button class="control-button">
-                  <svg width="28" height="28">
+                  <svg class="control-button__icon" aria-hidden="true">
                     <use href="src/assets/icons/symbol-defs.svg#icon-arrow-big"/>
                   </svg>
                 </button>
                 <button class="control-button is-rotated control-button--is-active">
-                  <svg width="28" height="28">
+                  <svg class="control-button__icon" aria-hidden="true">
                     <use
                       class="control-button--is-active"
                       href="src/assets/icons/symbol-defs.svg#icon-arrow-big"/>
@@ -636,10 +663,12 @@
               <p class="contact-section__header__title">together</p>
               <form action="" class="contact-form" >
               <div class="contact-form__container">
-                <label for="user-mail"></label>
-                <input class="contact-form__input" type="email" name="user-mail" id="" placeholder="clients@gmail.com">
-                <label for="user-comment"></label>
-                <input class="contact-form__input" type="text" name="user-comment" id="" placeholder="comments">
+                <label for="user-mail">
+                  <input class="contact-form__input" type="email" name="user-mail" id="" placeholder="clients@gmail.com">
+                </label>
+                <label for="user-comment">
+                  <input class="contact-form__input" type="text" name="user-comment" id="" placeholder="comments">
+                </label>
               </div>
                 <button type="submit" class="contact-form__button">Send</button>
               </form>

@@ -29,6 +29,14 @@ a{
 hr{
   border: 1px solid color-mix(in srgb, var(--primary-white-color), transparent 80%);
 }
+input {
+  appearance: none; 
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
 
 
 

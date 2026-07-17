@@ -1,30 +1,74 @@
-@use '../base/mixins' as m;
+@use "../base/mixins" as m;
+@use "../base/variables" as *;
 
-.faq-section{
-    margin-top: 4rem;
+.faq-section {
+  margin-top: 4rem;
+  @media (min-width: $bp-tablet) {
+    margin-top: 6rem;
+  }
+  @media (min-width: $bp-desktop) {
+    margin-top: 10.25rem;
+  }
+&__list{
+  margin-top: 2rem;
+  @media (min-width: $bp-desktop) {
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+  }
+}
+&__list li:nth-child(odd){
+  border-bottom: 2px solid color-mix(in srgb, var(--primary-gray-color), transparent 20%);
+  padding-bottom: 2rem;
 
-    &__list hr{
-        margin-top: 1.25rem;
-    }
+  @media (min-width: $bp-desktop) {
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
+    // border:1px solid color-mix(in srgb, var(--primary-gray-color), transparent 20%);
+    border-right: none;
+    border-left: none;
+  }
+}
+&__list li:nth-child(even){
+  border-bottom: 2px solid color-mix(in srgb, var(--primary-gray-color), transparent 20%);
+  padding-bottom: 2rem;
 
-    &__list hr:first-child{
-        margin-top: 2rem;
+  @media (min-width: $bp-desktop) {
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+    border-left:1px solid color-mix(in srgb, var(--primary-gray-color), transparent 20%);
+    
+  }
+}
+  &__list li:first-child {
+    border-top:2px solid color-mix(in srgb, var(--primary-gray-color), transparent 20%);
+  }
+  &__list li:nth-child(2) {
+    @media (min-width: $bp-desktop) {
+      border-top:2px solid color-mix(in srgb, var(--primary-gray-color), transparent 20%);
     }
-    &__header{
-        @include m.flex-between;
-        margin-top: 1.25rem;
+  }
+  &__header {
+    @include m.flex-between;
+    margin-top: 1.25rem;
+    @media (min-width: $bp-tablet) {
+      margin-top: 2rem;
     }
-    &__title{
-        max-width: 80%;
-        font-family: "InterTight";
-        font-size: 1.25rem;
-        color: var(--primary-white-color);
-        line-height: 1.5;
+  }
+  &__title {
+    max-width: 80%;
+    font-family: "InterTight";
+    font-size: 1.25rem;
+    color: var(--primary-white-color);
+    line-height: 1.5;
+  }
+  &__description {
+    margin-top: 1rem;
+    width: 90%;
+    font-family: "InterTight";
+    line-height: 1.5;
+    color: color-mix(in srgb, var(--primary-white-color), transparent 60%);
+    @media (min-width: $bp-tablet) {
+      margin-top: 1.5rem;
     }
-    &__description{
-        margin-top: 1rem;
-        font-family: "InterTight";
-        line-height: 1.5;
-        color: color-mix(in srgb, var(--primary-white-color), transparent 60%);
-    }
+  }
 }

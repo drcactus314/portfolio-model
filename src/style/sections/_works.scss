@@ -1,8 +1,17 @@
+@use "../base/variables" as *;
+
 .works-section {
   margin-top: 2rem;
   position: relative;
-  min-height: 500px;
+  min-height: 508px;
   overflow: hidden;
+  @media (min-width: $bp-tablet) {
+    margin-top: 6rem;
+    min-height: 960px;
+  }
+  @media (min-width: $bp-desktop) {
+    margin-top: 10.25rem;
+  }
   &__background {
     display: flex;
     justify-content: center;
@@ -13,7 +22,6 @@
     height: 100%;
     background-image: url("../../assets/images/works-section_beckground.svg");
     background-size: 500%;
-    transform: rotate(0deg);
     background-repeat: no-repeat;
     background-position: 25% 24%;
     z-index: 2;
@@ -26,21 +34,38 @@
     gap: 1rem;
     transform: rotate(16deg);
     margin-bottom: 6rem;
+    @media (min-width: $bp-tablet) {
+      gap: 2rem;
+    }
   }
   &__list {
     display: flex;
     gap: 1rem;
+    @media (min-width: $bp-tablet) {
+      gap: 3rem;
+    }
     &__image {
       width: 282px;
       height: 170px;
+      @media (min-width: $bp-tablet) {
+        width: 34rem;
+        height: 19.625rem;
+      }
     }
   }
   &__list.is-middle {
     margin-left: 8rem;
+    @media (min-width: $bp-tablet) {
+      margin-left: 5rem;
+    }
   }
-  &__list.is-top, &__list.is-bottom {
+  &__list.is-top,
+  &__list.is-bottom {
     gap: 2rem;
     margin-left: 24rem;
+    @media (min-width: $bp-tablet) {
+      gap: 3.5rem;
+      margin-left: 34rem;
+    }
   }
-
 }

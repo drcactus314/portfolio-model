@@ -1,19 +1,31 @@
 @use '../base/variables' as *;
 .benefits-section{
     margin-top: 4rem;
-
+    @media (min-width: $bp-desktop) {
+        margin-top: 10.25rem;
+        }
     &__list{
         margin-top: 2rem;
         display: grid;
         gap: 1rem;
         grid-template-columns: repeat(auto-fit, minmax(343px, 1fr)) ;
-        
+        @media (min-width: $bp-desktop) {
+            margin-top: -1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            }
     }
     &__button{
         margin-top: 2rem;
         @media (min-width: $bp-tablet) {
         margin-top: 4rem;
         }
+    }
+    &--grid{
+        @media (min-width: $bp-desktop) {
+            display: grid;
+            grid-template-columns: 50% 1fr;
+            }
     }
 }
 

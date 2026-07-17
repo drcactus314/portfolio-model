@@ -7,10 +7,27 @@
   background: linear-gradient(
     to right,
     var(--red-gradient) 0%,
-    var(--dark-red-gradient) 32%,
-    var(--dark-gradient) 50%
+    var(--dark-red-gradient) 45%,
+    var(--dark-gradient) 55%
   );
   padding-top: 2rem;
+  @media (min-width: $bp-tablet){
+    background: linear-gradient(
+      to right,
+      var(--red-gradient) 0%,
+      var(--dark-red-gradient) 32%,
+      var(--dark-gradient) 50%
+    );
+  };
+  @media (min-width: $bp-desktop){
+    min-height: 100vh;
+    background: linear-gradient(
+    to right,
+    var(--red-gradient) 0%,
+    var(--dark-red-gradient) 40%,
+    var(--dark-gradient) 50%
+  );
+   }
 }
 
 .wrapper-container::after {
@@ -32,4 +49,29 @@
   background-position: 0 0, 7px 0;
   pointer-events: none;
   z-index: 0;
+  @media (min-width: $bp-tablet) {
+    background: repeating-linear-gradient(
+    90deg,
+    rgb(0, 0, 0, 0.1) 0%,
+    transparent 8%,
+  ),repeating-linear-gradient(
+    90deg,
+    rgb(0, 0, 0, 0.1) 0%,
+    transparent 8%,
+  );
+  background-position: 0 0, 7px 0;
+  }
+   @media (min-width: $bp-desktop){
+   
+    background: repeating-linear-gradient(
+      90deg,
+      rgb(0, 0, 0, 0.1) 0%,
+      transparent 4%,
+    ),repeating-linear-gradient(
+      90deg,
+      rgba(44, 38, 38, 0.1) 0%,
+      transparent 4%,
+    );
+    background-position: 0 0, 7px 0;
+   }
 }
