@@ -1,4 +1,4 @@
-import { sectionMessage } from "../helpers/toastify";
+import { showSectionMessage } from "../helpers/toastify";
 
 const controlButton = document.getElementById("app");
 const headerMenu = document.getElementById("header-menu");
