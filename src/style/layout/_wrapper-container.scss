@@ -20,7 +20,6 @@
     );
   };
   @media (min-width: $bp-desktop){
-    min-height: 100vh;
     background: linear-gradient(
     to right,
     var(--red-gradient) 0%,
