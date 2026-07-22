@@ -1,43 +1,42 @@
-@use 'variables' as *;
-
+@use "variables" as *;
 
 .is-hidden {
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    pointer-events: none;
-    position: absolute;
-  }
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+}
 
 .text {
-    font-size: 16px;
-    font-family: "InterTight";
-    color: var(--primary-white-color);
-    line-height: 1.5;
-    letter-spacing: -1%;
+  font-size: 16px;
+  font-family: "InterTight";
+  color: var(--primary-white-color);
+  line-height: 1.5;
+  letter-spacing: -1%;
 }
-button{
+button {
   padding: 0;
   border: transparent;
 }
-a{
+a {
   text-decoration: none;
   color: var(--primary-dark-color);
 }
+a:hover {
+  cursor: pointer;
+}
 
-hr{
-  border: 1px solid color-mix(in srgb, var(--primary-white-color), transparent 80%);
+hr {
+  border: 1px solid
+    color-mix(in srgb, var(--primary-white-color), transparent 80%);
 }
 input {
-  appearance: none; 
+  appearance: none;
   -webkit-appearance: none;
   border: none;
   outline: none;
   padding: 0;
   margin: 0;
 }
-
-
-
-

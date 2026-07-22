@@ -96,20 +96,22 @@
                   />
                 </div>
               </div>
-              <div class="about-section__text">
-                <div class="section-title">
-                  <h2>About me</h2>
-                  <button class="button" type="button">
-                    <svg class="button__icon" aria-hidden="true">
-                      <use
-                        href="src/assets/icons/symbol-defs.svg#icon-arrow-small"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div class="about-section__text__description ">
+              <div class="about-section__text accordion-container">
+               <div class="ac is-active">
+                <div class="ac-header">
+                  <button class="section-title ac-trigger" type="button">
+                    <h2>About me</h2>
+                    <span class="button">
+                      <svg class="button__icon" aria-hidden="true">
+                        <use
+                          href="src/assets/icons/symbol-defs.svg#icon-arrow-small"
+                        />
+                      </svg>
+                    </span>
+                </button>
+                <div class="about-section__text__description ac-panel">
                 <div></div>
-                 <div>
+                 <div class="ac-text">
                    <p class="text">
                     I am Lloyd Jefferson, a talented programmer with extensive
                     expertise in software development. I have an understanding
@@ -135,50 +137,48 @@
                  </div>
                 </div>
                 <hr />
+               </div>
               </div>
-              <section class="role-section">
-                <div class="section-title">
-                  <h2>Role</h2>
-                  <button class="button" type="button">
-                    <svg class="button__icon" aria-hidden="true">
-                      <use
-                        href="src/assets/icons/symbol-defs.svg#icon-arrow-small"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div class="about-section__text__description ">
-                <div></div>
-                 <div>
-                <ul>
-                  <li><p class="text">Frontend development</p></li>
-                  <li><p class="text">HeadlessCMS,Wordpress</p></li>
-                  <li><p class="text">Blender(enjoy)</p></li>
-                </ul>
-                 </div>
-                </div>
+              <section class="role-section ac">
+                  <div class="ac-header">
+                    <button class="ac-trigger section-title">
+                    <h2>Role</h2>
+                     <span class="button">
+                      <svg class="button__icon" aria-hidden="true">
+                        <use href="src/assets/icons/symbol-defs.svg#icon-arrow-small"/>
+                      </svg>
+                     </span>
+                    </button>
+                  </div>
+                  <div class="about-section__text__description ac-panel">
+                    <div></div>
+                  <ul class="ac-text">
+                    <li><p class="text">Frontend development</p></li>
+                    <li><p class="text">HeadlessCMS,Wordpress</p></li>
+                    <li><p class="text">Blender(enjoy)</p></li>
+                  </ul>
+                  </div>
               </section>
               <hr />
-              <section class="education-section">
-                <div class="section-title">
-                  <h2>Education</h2>
-                  <button class="button" type="button">
-                    <svg class="button__icon" aria-hidden="true">
-                      <use
-                        href="src/assets/icons/symbol-defs.svg#icon-arrow-small"
-                      />
-                    </svg>
+              <section class="education-section ac">
+                <div class=" ac-header">
+                  <button class="ac-trigger section-title" type="button">
+                    <h2>Education</h2>
+                    <span class="button">
+                      <svg class="button__icon" aria-hidden="true">
+                        <use
+                          href="src/assets/icons/symbol-defs.svg#icon-arrow-small"/>
+                      </svg>
+                    </span>
                   </button>
                 </div>
-                  <div class="about-section__text__description">
+                  <div class="about-section__text__description ac-panel">
                 <div></div>
-                 <div>
-                <ul>
+                <ul class="ac-text">
                   <li><p class="text">2018 - 2019  / Frontend Development Diploma, GoIT IT School, New York</p></li>
                   <li><p class="text">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</p></li>
                   <li><p class="text">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p></li>
                 </ul>
-                 </div>
                 </div>
                 <hr>
                 <div class="education-section__skills">
@@ -692,6 +692,7 @@
         </div>
       </div>
     </div>
+    
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

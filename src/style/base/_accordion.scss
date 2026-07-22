@@ -1,0 +1,25 @@
+@use 'variables' as * ;
+@use 'mixins' as m ;
+
+.ac{
+    background-color: transparent;
+    border: none;
+}
+.ac-header{
+    background-color: transparent;
+}
+.ac-header .ac-trigger{
+    @include m.text-title;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.ac-header .ac-trigger::after{
+    display: none;
+}
+.ac.ac-trigger::after{
+    content: none;
+}
+.ac .ac-panel .ac-text{
+    padding: 0;
+}
