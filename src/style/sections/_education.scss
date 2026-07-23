@@ -10,14 +10,17 @@
     margin-top: 2rem;
     @include m.flex-between;
     align-items: center;
-    gap: 47px;
+    gap: 55px;
+    @media (min-width: $bp-tablet) {
+      gap: 64px;
+    }
     @media (min-width: $bp-desktop) {
       margin-top: 6rem;
+      padding: 0 2rem;
     }
     &__list {
       display: flex;
       flex-wrap: nowrap;
-      overflow-x: auto;
 
       &__item {
         width: 130px;
