@@ -6,7 +6,6 @@
 @use 'base/reset';
 @use 'base/mixins';
 
-@use 'utils/utils';
 
 @use 'layout/container';
 @use 'layout/header';
@@ -33,3 +32,4 @@
 @use 'sections/review';
 @use 'sections/contact';
 @use 'sections/connect';
+@use 'utils/utils';

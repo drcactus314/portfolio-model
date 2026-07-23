@@ -18,10 +18,11 @@ getToMenu();
 //Function that goes to target section in header-menu
 
 [...getAllLinks].map((link) => {
-  const targetId = link.getAttribute("href").replace("#", "");
-
   link.addEventListener("click", (e) => {
     e.preventDefault();
+    const href = link.getAttribute("href");
+    if (!href || href === "#") return;
+    const targetId = href.replace("#", "");
     const targetSection = document.getElementById(targetId);
     if (targetSection) {
       targetSection.scrollIntoView({ behavior: "smooth" });
