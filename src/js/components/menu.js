@@ -2,11 +2,15 @@ import { showSectionMessage } from "../helpers/toastify";
 
 const controlButton = document.getElementById("app");
 const headerMenu = document.getElementById("header-menu");
-const getAllLinks = document.querySelectorAll(".header__menu__link");
+const getAllLinks = document.querySelectorAll(".header__menu__link, .main-button");
 
 // Function that toggle header-menu
 const getToMenu = () => {
   controlButton.addEventListener("click", (e) => {
+    const newPage = e.target.closest("a")
+    if(newPage && newPage.target ==="_blank" ) {
+      return 
+    }
     e.preventDefault();
     if (e.target.id === "main-menu") {
       headerMenu.classList.toggle("is-hidden");

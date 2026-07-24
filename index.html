@@ -182,7 +182,7 @@
                 </div>
                 <hr>
                 <div class="education-section__skills">
-                 <div class="swiper" tabindex="0">
+                 <div class="swiper swiper-skills" tabindex="0">
                   <ul class="education-section__skills__list swiper-wrapper">
                     <li class="education-section__skills__list__item swiper-slide" >
                       HTML/CSS
@@ -298,12 +298,12 @@
                     </article>
                   </li>
                 </ul>
-                <button
+                <a href="#contact"
                   class="benefits-section__button main-button"
                   type="button"
                 >
                   Order the project
-                </button>
+              </a>
               </div>
              </div>
             </div>
@@ -313,11 +313,12 @@
               <div class="section-title">
                 <h2>Projects</h2>
               </div>
-              <ul class="projects-section__list">
-                <li class="projects-section__item">
+             <div class="swiper swiper-single">
+              <ul class="projects-section__list swiper-wrapper">
+                <li class="projects-section__item swiper-slide">
                   <article class="projects-section__container project-card">
-                  <div class="project-card__info">
-                    <ul class="project-card__info__tags-list">
+                    <div class="project-card__info">
+                      <ul class="project-card__info__tags-list">
                       <li class="project-card__info__tags-list__item">
                         <p>#react</p>
                       </li>
@@ -330,26 +331,26 @@
                       <li class="project-card__info__tags-list__item">
                         <p>#git</p>
                       </li>
-                    </ul>
-                    <h3 class="project-card__info__title">
+                      </ul>
+                      <h3 class="project-card__info__title">
                       Programming Across Borders: Ideas, Technologies, Innovations
-                    </h3>
-                    <button
-                      class="main-button project-card__info__button"
+                      </h3>
+                      <a href="https://github.com/drcactus314"
+                      class="project-button project-card__info__button"
                       type="button"
+                      target="_blank"
                     >
                       See project
-                    </button>
-                  </div>
-                  <figure class="project-card__image">
+                    </a>
+                    </div>
+                    <figure class="project-card__image">
                     <img
                       class="project-card__image__item"
-                      src="./src/assets/images/registration-project-books.png"
-                      alt=""
-                    />
-                  </figure>
-                </article></li>
-                <li class="projects-section__item"><article class="projects-section__container project-card">
+                      src="./src/assets/images/registration-project-books.png"/>
+                    </figure>
+                  </article>
+                </li>
+                <li class="projects-section__item swiper-slide"><article class="projects-section__container project-card">
                   <div class="project-card__info">
                     <ul class="project-card__info__tags-list">
                       <li class="project-card__info__tags-list__item">
@@ -368,12 +369,13 @@
                     <h3 class="project-card__info__title">
                       Programming Across Borders: Ideas, Technologies, Innovations
                     </h3>
-                    <button
-                      class="main-button project-card__info__button"
-                      type="button"
-                    >
-                      See project
-                    </button>
+                    <a href="https://github.com/drcactus314"
+                    class="project-button project-card__info__button"
+                    type="button"
+                    target="_blank"
+                  >
+                    See project
+                  </a>
                   </div>
                   <figure class="project-card__image">
                     <img
@@ -383,7 +385,7 @@
                     />
                   </figure>
                 </article></li>
-                <li class="projects-section__item"><article class="projects-section__container project-card">
+                <li class="projects-section__item swiper-slide"><article class="projects-section__container project-card">
                   <div class="project-card__info">
                     <ul class="project-card__info__tags-list">
                       <li class="project-card__info__tags-list__item">
@@ -402,12 +404,13 @@
                     <h3 class="project-card__info__title">
                       Programming Across Borders: Ideas, Technologies, Innovations
                     </h3>
-                    <button
-                      class="main-button project-card__info__button"
+                    <a href="https://github.com/drcactus314"
+                      class="project-button project-card__info__button"
                       type="button"
+                      target="_blank"
                     >
                       See project
-                    </button>
+                    </a>
                   </div>
                   <figure class="project-card__image">
                     <img
@@ -418,9 +421,10 @@
                   </figure>
                 </article></li>
               </ul>
+             </div>
               <div class="controls-button-container">
                 <button
-                  class="project-section__controls__button control-button"
+                  class="project-section__controls__button control-button prev"
                 >
                   <svg class="control-button__icon">
                     <use
@@ -429,7 +433,7 @@
                   </svg>
                 </button>
                 <button
-                  class="project-section__controls__button control-button is-rotated control-button--is-active"
+                  class="project-section__controls__button control-button is-rotated next"
                 >
                   <svg class="control-button__icon">
                     <use

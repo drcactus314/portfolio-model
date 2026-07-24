@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/a11y";
 
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper-skills", {
   modules: [Navigation, Keyboard, A11y],
   loop: true,
   slidesPerView: "auto",
@@ -16,6 +16,26 @@ const swiper = new Swiper(".swiper", {
     enabled: true,
   },
   navigation: {
-    nextEl: ".button-skills",
+    nextEl: '.button-skills',
   },
 });
+
+const swiperSingle = new Swiper(".swiper-single", {
+  modules: [Navigation, Keyboard, A11y],
+  loop: false,
+  slidesPerView: "auto",
+  spaceBetween: 16,
+  keyboard:{
+    enabled: true,
+    onlyInViewport: false,
+  },
+  a11y: {
+    enabled: true,
+  },
+  lockClass: ".swiper-button-disabled",
+  navigation: {
+    nextEl: '.control-button.next',
+    prevEl: '.control-button.prev',
+  },
+});
+

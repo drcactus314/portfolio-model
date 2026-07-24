@@ -11,8 +11,6 @@
     &__list{
       display: flex;
       flex-wrap: no-wrap;
-      overflow-x: auto;
-      gap: 1rem;
       @media (min-width: $bp-desktop) {
         margin-top: 2rem;
       }
