@@ -2,10 +2,15 @@ import "accordion-js/dist/accordion.min.css";
 import Accordion from 'accordion-js';
 
 
-const accordion = document.querySelector('.accordion-container');
+const accordionArray = document.querySelectorAll('.accordion-container');
+console.log(accordionArray);
 
-const myAccordion = new Accordion(accordion, {
+const myAccordion = new Accordion(accordionArray[0], {
     openOnInit: [0],
+    showMultiple: "true",
+});
+const mySecondAccordion = new Accordion(accordionArray[1], {
+    showMultiple: "true",
 });
 
 

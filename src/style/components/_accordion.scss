@@ -1,25 +1,57 @@
 @use '../base/variables' as * ;
 @use '../base/mixins' as m ;
 
-.ac{
+
+.ac .ac-trigger{
+    font: inherit;
+}
+
+// about-section
+
+.about-section__text .ac{
     background-color: transparent;
     border: none;
 }
-.ac-header{
+.about-section__text .ac-header{
     background-color: transparent;
 }
-.ac-header .ac-trigger{
+.about-section__text .ac-header .ac-trigger{
     @include m.text-title;
     display: flex;
     justify-content: space-between;
     padding: 0;
 }
-.ac-header .ac-trigger::after{
+.about-section__text .ac-header .ac-trigger::after{
     display: none;
 }
-.ac.ac-trigger::after{
+.about-section__text .ac.ac-trigger::after{
     content: none;
 }
-.ac .ac-panel .ac-text{
+.about-section__text .ac .ac-panel .ac-text{
     padding: 0;
 }
+
+
+// faq-section
+
+.faq-section__list .ac{
+    margin-bottom: 0;
+    background-color: transparent;
+    border: none;
+}
+.faq-section__list .ac-header{
+    background-color: transparent;
+    margin-top: 2rem;
+}
+
+.faq-section__list .ac-trigger{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.faq-section__list .ac-trigger::after{
+    display: none;
+    content: none;
+}
+
+
