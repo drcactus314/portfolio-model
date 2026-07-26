@@ -41,6 +41,8 @@
   &__list {
     display: flex;
     gap: 1rem;
+    white-space: no-wrap;
+ 
     @media (min-width: $bp-tablet) {
       gap: 3rem;
     }
@@ -67,5 +69,21 @@
       gap: 3.5rem;
       margin-left: 34rem;
     }
+  }
+}
+
+.is-animated{
+  animation-name: marqueeLine;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes marqueeLine {
+  from{
+   transform: translateX(0%);
+  } to{
+   transform: translateX(-50%);
   }
 }

@@ -3,7 +3,6 @@ import Accordion from 'accordion-js';
 
 
 const accordionArray = document.querySelectorAll('.accordion-container');
-console.log(accordionArray);
 
 const myAccordion = new Accordion(accordionArray[0], {
     openOnInit: [0],
