@@ -42,7 +42,7 @@ const swiperSingle = new Swiper(".swiper-single", {
 const swiperReview = new Swiper(".swiper-review", {
   modules: [Navigation, Keyboard, A11y],
   loop: false,
-  slidesPerView: 4,
+  slidesPerView: 1,
   slidesPerGroup: 1,
   spaceBetween: 16,
   keyboard:{
@@ -63,9 +63,6 @@ const swiperReview = new Swiper(".swiper-review", {
     },
     768: {
       slidesPerView: 2
-    },
-    375: {
-      slidesPerView: 1
     }
   }
 });
