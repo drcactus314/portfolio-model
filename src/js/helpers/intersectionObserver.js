@@ -2,7 +2,7 @@ const getWorkSection = document.getElementById("work");
 const animationSections = document.querySelectorAll(".works-section__list");
 
 const optinsObserver = {
-  threshold: 0.1,
+  threshold: 0.5,
 };
 
 const runAnimation = (entries) => {

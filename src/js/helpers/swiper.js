@@ -39,3 +39,35 @@ const swiperSingle = new Swiper(".swiper-single", {
   },
 });
 
+const swiperReview = new Swiper(".swiper-review", {
+  modules: [Navigation, Keyboard, A11y],
+  loop: false,
+  slidesPerView: 4,
+  slidesPerGroup: 1,
+  spaceBetween: 16,
+  keyboard:{
+    enabled: true,
+    onlyInViewport: false,
+  },
+  a11y: {
+    enabled: true,
+  },
+  lockClass: ".swiper-button-disabled",
+  navigation: {
+    nextEl: '.review-button.next',
+    prevEl: '.review-button.prev',
+  },
+  breakpoints:{
+    1200: {
+      slidesPerView: 4
+    },
+    768: {
+      slidesPerView: 2
+    },
+    375: {
+      slidesPerView: 1
+    }
+  }
+});
+
+

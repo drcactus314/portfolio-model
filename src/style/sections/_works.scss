@@ -72,18 +72,10 @@
   }
 }
 
-.is-animated{
-  animation-name: marqueeLine;
-  animation-duration: 8s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-
 @keyframes marqueeLine {
-  from{
-   transform: translateX(0%);
-  } to{
-   transform: translateX(-50%);
+  0%{
+   transform: translateX(-2%);
+  } 100%{
+   transform: translateX(-25%);
   }
 }

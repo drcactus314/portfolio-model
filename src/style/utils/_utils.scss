@@ -5,6 +5,14 @@
 .is-underlined{
         text-decoration: underline;
 }
+
+.is-animated{
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
 .swiper-button-disabled {
     border: 1px solid color-mix(in srgb, var(--primary-white-color), transparent 80%);
     stroke: var(--primary-gray-color);
