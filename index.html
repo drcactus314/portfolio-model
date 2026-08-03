@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio-model</title>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Jefferson</title>
+    <link rel="icon" href="src/assets/images/favicon.png" type="image/png">
   </head>
   <body>
     <div id="app" class="app">
@@ -16,7 +17,7 @@
                   class="header__media__photo"
                   src="src/assets/images/man-works-on-laptop.jpg"
                   alt="man-works-on-laptop"
-                />
+                >
               </div>
               <a>
                 <svg class="header__media__logo">
@@ -37,21 +38,21 @@
               <button type="button" class="main-button">Order the project</button>
             </div>
             <div class="header__mobile-menu">
-              <button type="button" class="header__mobile-menu__button">
+              <button type="button" class="header__mobile-menu__button open-mobile-menu">
                 <svg class="header__mobile-menu__button__logo">
                   <use href="src/assets/icons/symbol-defs.svg#icon-menu" />
                 </svg>
               </button>
             </div>     
-              <nav class="mobile-menu is-hidden">
-                <button class="mobile-menu__close-button"><svg width="24" height="24">
+              <nav class="mobile-menu">
+                <button class="mobile-menu__close-button close-mobile-menu"><svg width="24" height="24">
                   <use href="src/assets/icons/symbol-defs.svg#icon-close" />
                 </svg></button>
                 <ul class="header__menu is-underlined">
-                  <li class="header__menu__item"><a href="" class="header__menu__link is-underlined">About me</a></li>
-                  <li class="header__menu__item"><a href="" class="header__menu__link is-underlined">Benefits</a></li>
-                  <li class="header__menu__item"><a href="" class="header__menu__link is-underlined">Projects</a></li>
-                  <li class="header__menu__item"><a href="" class="header__menu__link is-underlined">FAQ</a></li>
+                  <li class="header__menu__item"><a href="#about" class="header__menu__link is-underlined">About me</a></li>
+                  <li class="header__menu__item"><a href="#benefits" class="header__menu__link is-underlined">Benefits</a></li>
+                  <li class="header__menu__item"><a href="projects" class="header__menu__link is-underlined">Projects</a></li>
+                  <li class="header__menu__item"><a href="#faq" class="header__menu__link is-underlined">FAQ</a></li>
                 </ul>
                 <button class="mobile-menu__button main-button">
                   Order the Project
@@ -60,8 +61,8 @@
           </header>
           <section class="hero-section">
             <h1 class="hero-section__title">
-              Hello. <br />
-              I’m Fullstack developer <br />
+              Hello. <br >
+              I’m Fullstack developer <br >
               Lloyd Jefferson.
             </h1>
             <div class="hero-section__social-media">
@@ -80,6 +81,7 @@
         <main>
           <section class="about-section" id="about">
             <div class="container">
+              <h2 class="visually-hidden">About me</h2>
               <div class="about-section__quote">
                 <div class="about-section__quote__item cards">
                   <p>
@@ -93,14 +95,14 @@
                   <img
                     src="src/assets/images/man-looks-somewhere-with-laptop.jpg"
                     alt="man-looks-somewhere-with-laptop"
-                  />
+                  >
                 </div>
               </div>
               <div class="about-section__text accordion-container">
                <div class="ac">
                 <div class="ac-header">
                   <button class="section-title ac-trigger" type="button">
-                    <h2>About me</h2>
+                    <span>About me</span>
                     <span class="button">
                       <svg class="button__icon" aria-hidden="true">
                         <use
@@ -136,13 +138,13 @@
                   </p>
                  </div>
                 </div>
-                <hr />
+                <hr>
                </div>
               </div>
-              <section class="role-section ac">
+              <div class="role-section ac">
                   <div class="ac-header">
                     <button class="ac-trigger section-title">
-                    <h2>Role</h2>
+                    <span>Role</span>
                      <span class="button">
                       <svg class="button__icon" aria-hidden="true">
                         <use href="src/assets/icons/symbol-defs.svg#icon-arrow-small"/>
@@ -158,12 +160,12 @@
                     <li><p class="text">Blender(enjoy)</p></li>
                   </ul>
                   </div>
-              </section>
-              <hr />
-              <section class="education-section ac">
+              </div>
+              <hr>
+              <div class="education-section ac">
                 <div class=" ac-header">
                   <button class="ac-trigger section-title" type="button">
-                    <h2>Education</h2>
+                    <span>Education</span>
                     <span class="button">
                       <svg class="button__icon" aria-hidden="true">
                         <use
@@ -214,8 +216,9 @@
                     </svg>
                   </button>
                 </div>
-              </section>
+              </div>
             </div>
+           </div>
           </section>
           <section class="benefits-section" id="benefits">
             <div class="container">
@@ -300,7 +303,6 @@
                 </ul>
                 <a href="#contact"
                   class="benefits-section__button main-button"
-                  type="button"
                 >
                   Order the project
               </a>
@@ -337,7 +339,6 @@
                       </h3>
                       <a href="https://github.com/drcactus314"
                       class="project-button project-card__info__button"
-                      type="button"
                       target="_blank"
                     >
                       See project
@@ -345,8 +346,9 @@
                     </div>
                     <figure class="project-card__image">
                     <img
-                      class="project-card__image__item"
-                      src="./src/assets/images/registration-project-books.png"/>
+                    class="project-card__image__item"
+                    src="./src/assets/images/registration-project-books.png" 
+                    alt="">
                     </figure>
                   </article>
                 </li>
@@ -371,7 +373,6 @@
                     </h3>
                     <a href="https://github.com/drcactus314"
                     class="project-button project-card__info__button"
-                    type="button"
                     target="_blank"
                   >
                     See project
@@ -381,8 +382,7 @@
                     <img
                       class="project-card__image__item"
                       src="./src/assets/images/registration-project-books-and-people.png"
-                      alt=""
-                    />
+                      alt="">
                   </figure>
                 </article></li>
                 <li class="projects-section__item swiper-slide"><article class="projects-section__container project-card">
@@ -406,7 +406,6 @@
                     </h3>
                     <a href="https://github.com/drcactus314"
                       class="project-button project-card__info__button"
-                      type="button"
                       target="_blank"
                     >
                       See project
@@ -416,8 +415,7 @@
                     <img
                       class="project-card__image__item"
                       src="./src/assets/images/dog-in-vet-and-people.png"
-                      alt=""
-                    />
+                      alt="">
                   </figure>
                 </article></li>
               </ul>
@@ -598,6 +596,7 @@
             </div>
           </section>
           <section class="works-section" id="work">
+            <h2 class="visually-hidden">Works</h2>
             <div class="works-section__background">
               <div class="works-section__container">
                 <ul class="works-section__list is-top">
@@ -659,7 +658,7 @@
                 <li class="swiper-slide"> 
                   <article class="reviews-section__item">
                   <div class="cards__icon-container reviews-section__card__icon">
-                   <img class="cards__icon" src="./src/assets/images/Featured icon.jpg" alt="" width="48" height="48">
+                   <img class="cards__icon" src="./src/assets/images/woman-avatar-feedback.jpg" alt="" width="48" height="48">
                   </div>
                   <h3 class="cards__title cards__title--small-margin">Anna</h3>
                   <p class="cards__description">The developed project impresses with its quality and efficiency. The code is cleanly written and the functionality exceeds expectations. Extremely satisfied with the cooperation!</p>
@@ -668,7 +667,7 @@
                 <li class="swiper-slide">
                    <article class="reviews-section__item">
                   <div class="cards__icon-container reviews-section__card__icon">
-                   <img class="cards__icon" src="./src/assets/images/girl-avatar4-feeedback.jpg" alt="" width="48" height="48">
+                   <img class="cards__icon" src="./src/assets/images/girl-avatar4-feedback.jpg" alt="" width="48" height="48">
                   </div>
                   <h3 class="cards__title cards__title--small-margin">Ivetta</h3>
                   <p class="cards__description">Thanks for the excellent work on the project! His talent and professionalism deserve recognition. I recommend it to everyone who is looking for an expert in the field of software development.</p>
@@ -695,7 +694,7 @@
                 <li class="swiper-slide"> 
                   <article class="reviews-section__item">
                   <div class="cards__icon-container reviews-section__card__icon">
-                   <img class="cards__icon" src="./src/assets/images/Featured icon.jpg" alt="" width="48" height="48">
+                   <img class="cards__icon" src="./src/assets/images/woman-avatar-feedback.jpg" alt="" width="48" height="48">
                   </div>
                   <h3 class="cards__title cards__title--small-margin">Anna</h3>
                   <p class="cards__description">The developed project impresses with its quality and efficiency. The code is cleanly written and the functionality exceeds expectations. Extremely satisfied with the cooperation!</p>
@@ -704,7 +703,7 @@
                 <li class="swiper-slide">
                 <article class="reviews-section__item">
                   <div class="cards__icon-container reviews-section__card__icon">
-                   <img class="cards__icon" src="./src/assets/images/girl-avatar4-feeedback.jpg" alt="" width="48" height="48">
+                   <img class="cards__icon" src="./src/assets/images/girl-avatar4-feedback.jpg" alt="" width="48" height="48">
                   </div>
                   <h3 class="cards__title cards__title--small-margin">Ivetta</h3>
                   <p class="cards__description">Thanks for the excellent work on the project! His talent and professionalism deserve recognition. I recommend it to everyone who is looking for an expert in the field of software development.</p>
@@ -726,23 +725,24 @@
                   </svg>
                 </button>
               </div>
+            </div> 
           </section>
         </main>
         <footer>
           <div class="container">
-            <section class="contact-section" id="contact">
+            <div class="contact-section" id="contact">
               <div class="contact-section__header">
                 <img class="contact-section__header__image" src="src/assets/images/footer.jpg" alt="man-works-on-laptop" height="44" width="44">
                 <p class="contact-section__header__title">Let's <span>work</span> </p>
               </div>
               <p class="contact-section__header__title">together</p>
-              <form id="contact-form" action="" class="contact-form" >
+              <form id="contact-form" class="contact-form" >
               <div class="contact-form__container">
                 <label for="user-mail">
-                  <input class="contact-form__input" type="email" name="user-mail" id="" placeholder="clients@gmail.com" required pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
+                  <input class="contact-form__input" type="email" id="user-mail" placeholder="clients@gmail.com" required pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
                 </label>
                 <label for="user-comment">
-                  <input class="contact-form__input" type="text" name="user-comment" id="" placeholder="comments" required>
+                  <input class="contact-form__input" type="text" id="user-comment" placeholder="comments" required>
                 </label>
               </div>
                 <button type="submit" class="contact-form__button">Send</button>
@@ -751,7 +751,7 @@
                 <a href="mailto:" class="connect-section__link">lloydjefferson@gmail.com</a>
                 <a href="tel:+" class="connect-section__link">+380 11 1111 11 11</a>
               </address>
-            </section>
+            </div>
           </div>
         </footer>
         <div class="backdrop is-hidden">
