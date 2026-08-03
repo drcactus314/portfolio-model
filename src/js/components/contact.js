@@ -1,14 +1,28 @@
+import { allDocument } from "./menu";
+
 const contactForm = document.getElementById('contact-form');
-const openBackdrop = document.querySelector('.open-backdrop');
-const closeBackdrop = document.querySelector('.close-backdrop');
-console.log(contactForm);
+const backdrop = document.querySelector('.backdrop');
+
 
 contactForm.addEventListener('submit', (e)=>{
     e.preventDefault();
-    console.log('сабміт не спрацював');
-    openBackdrop.classList.remove('is-hidden');
+    backdrop.classList.remove('is-hidden');
+    document.body.style.overflow = 'hidden';
 })
 
-closeBackdrop.addEventListener('click', (e)=>{
-    openBackdrop.classList.add('is-hidden')
+
+const closeModal = ()=>{
+    backdrop.classList.add('is-hidden');
+    document.body.style.overflow = '';
+}
+
+backdrop.addEventListener('click', (e)=>{
+    if(e.target.closest('.modal__close-button') || e.target === backdrop){
+        closeModal();
+    }
+})
+allDocument.addEventListener('keydown', (e)=>{
+ if (e.key === 'Escape'){
+    closeModal();
+ }
 })
