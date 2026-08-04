@@ -2,6 +2,9 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const openMobileMenuBtn = document.querySelector('.open-mobile-menu');
 const closeMobileMenuBtn = document.querySelector('.close-mobile-menu');
 
+window.addEventListener('load', () => {
+    document.body.classList.remove('no-transition');
+});
 
 const toggleMobileMenu = ()=>{
     mobileMenu.classList.toggle('is-open');

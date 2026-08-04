@@ -10,19 +10,20 @@
   top: 0;
   left: 0;
   background:
-    repeating-linear-gradient(90deg, rgb(0, 0, 0, 0.2) 0%, transparent 9%),
-    repeating-linear-gradient(90deg, rgb(0, 0, 0, 0.1) 0%, transparent 9%),
-    linear-gradient(
-      to right,
-      var(--red-gradient) 0%,
-      var(--dark-red-gradient) 32%,
-      var(--dark-gradient) 50%
+  repeating-linear-gradient(90deg, rgb(0, 0, 0, 0.2) 0%, transparent 9%),
+  repeating-linear-gradient(90deg, rgb(0, 0, 0, 0.1) 0%, transparent 9%),
+  linear-gradient(
+    to right,
+    var(--red-gradient) 0%,
+    var(--dark-red-gradient) 32%,
+    var(--dark-gradient) 50%
     );
-  transform: translateX(100%);
-  transition: transform 0.3s ease-in-out;
-  &__button {
-    position: fixed;
-    bottom: 4rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  
+    &__button {
+      position: fixed;
+      bottom: 4rem;
     padding: 0.875rem 1.95rem !important;
     background-color: var(--primary-red-color) !important;
     border: 1px solid var(--primary-red-color) !important ;
@@ -38,5 +39,5 @@
 }
 
 .is-open {
-  transform: translateX(0);
+  transform: translateX(0%);
 }

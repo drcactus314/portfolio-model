@@ -1,5 +1,9 @@
 @use "variables" as *;
 
+body.no-transition * {
+  transition: none !important;
+}
+
 .is-hidden {
   width: 0;
   height: 0;

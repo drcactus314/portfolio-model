@@ -12,12 +12,12 @@ const handleEscape = (e) => {
 const openModal = () => {
   backdrop.classList.remove("is-hidden");
   document.body.style.overflow = "hidden";
-  document.addEventListener("keydown", handleEscape());
+  document.addEventListener("keydown", handleEscape);
 };
 const closeModal = () => {
   backdrop.classList.add("is-hidden");
   document.body.style.overflow = "";
-  document.removeEventListener("keydown", handleEscape());
+  document.removeEventListener("keydown", handleEscape);
 };
 
 contactForm.addEventListener("submit", (e) => {
