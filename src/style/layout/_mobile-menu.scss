@@ -23,6 +23,7 @@
   
     &__button {
       position: fixed;
+      display: inline-block;
       bottom: 4rem;
     padding: 0.875rem 1.95rem !important;
     background-color: var(--primary-red-color) !important;

@@ -24,6 +24,9 @@ button {
   padding: 0;
   border: transparent;
 }
+button:hover {
+  cursor: pointer;
+}
 a {
   text-decoration: none;
   color: var(--primary-dark-color);

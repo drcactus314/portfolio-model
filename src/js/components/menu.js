@@ -2,19 +2,19 @@ import { showSectionMessage } from "../helpers/toastify";
 
 export const allDocument = document.getElementById("app");
 const headerMenu = document.getElementById("header-menu");
-const getAllLinks = document.querySelectorAll(".header__menu__link, .main-button");
+const getAllLinks = document.querySelectorAll(
+  ".header__menu__link, .main-button"
+);
 
 // Function that toggle header-menu
 const getToMenu = () => {
   allDocument.addEventListener("click", (e) => {
-    const menuToggleBtn = e.target.closest("#main-menu")
-    if(!menuToggleBtn) {
-      return 
+    const menuToggleBtn = e.target.closest("#main-menu");
+    if (!menuToggleBtn) {
+      return;
     }
     e.preventDefault();
-   
-      headerMenu.classList.toggle("is-hidden");
-    
+    headerMenu.classList.toggle("is-hidden");
   });
 };
 getToMenu();
